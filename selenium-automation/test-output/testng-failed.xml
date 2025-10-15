@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [AutomationSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="SmokeTests(failed)">
+    <classes>
+      <class name="tests.TestGuideTest">
+        <methods>
+          <include name="TestGuideNavigation"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.TestGuideTest -->
+      <class name="tests.OrangeLoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="testOrangeLogin"/>
+        </methods>
+      </class> <!-- tests.OrangeLoginTest -->
+    </classes>
+  </test> <!-- SmokeTests(failed) -->
+</suite> <!-- Failed suite [AutomationSuite] -->

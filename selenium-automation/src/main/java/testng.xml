@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="AutomationSuite">                               
+    <test name="SmokeTests">
+        <classes>
+            <class name="tests.LoginTest" />
+            <class name="tests.TestGuideTest" />
+            <class name="tests.OrangeLoginTest" />
+            
+        </classes>
+    </test>
+
+    <test name="RegressionTests">
+        <classes>
+            <class name="tests.LoginTest" />
+        </classes>
+    </test>
+</suite>
