@@ -11,29 +11,29 @@ import Pages.OrangeLogin;
 public class OrangeLoginTest {
 	
 	WebDriver driver;
-	orangeLogin login;
+	OrangeLogin login;
 	
 	@BeforeClass
 	public void setup() {
-		 WebDriver driver = new ChromeDriver();
-		 driver.manage().window().maximize();
-		 driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-		 
-		orangeLogin login = new orangeLogin();
-	
-		
+		System.setProperty("webdriver.chrome.driver", "C:\\ChromeDriver\\chromedriver-win64\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+
+		login = new OrangeLogin(driver);
 	}
 	
 	@Test
 	public void testOrangeLogin() {
-		OrangeLogin orangeLogin = new OrangeLogin(null);
-		orangeLogin.Login("Admin", "Admin123");
+		login.Login("Admin", "Admin123");
 	}
 	
 	@AfterClass
 	public void tearDown() {
-		driver.quit();
+		if (driver != null) {
+			driver.quit();
 		
 	}
 
+	}
 }
