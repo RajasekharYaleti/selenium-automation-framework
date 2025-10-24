@@ -5,6 +5,7 @@
             <class name="tests.LoginTest" />
             <class name="tests.TestGuideTest" />
             <class name="tests.OrangeLoginTest" />
+             <class name="tests.AddNewUserTest" />
             
         </classes>
     </test>

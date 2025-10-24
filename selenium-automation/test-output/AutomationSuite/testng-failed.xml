@@ -10,13 +10,6 @@
           <include name="setup"/>
         </methods>
       </class> <!-- tests.TestGuideTest -->
-      <class name="tests.OrangeLoginTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="testOrangeLogin"/>
-        </methods>
-      </class> <!-- tests.OrangeLoginTest -->
     </classes>
   </test> <!-- SmokeTests(failed) -->
 </suite> <!-- Failed suite [AutomationSuite] -->
