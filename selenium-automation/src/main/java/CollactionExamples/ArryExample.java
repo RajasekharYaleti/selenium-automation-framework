@@ -1,4 +1,4 @@
-package programs_java;
+package CollactionExamples;
 
 import java.util.ArrayList;
 
